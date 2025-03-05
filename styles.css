@@ -1,0 +1,311 @@
+/*^ CUSTOM CSS ********************************************************/
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap");
+
+* {
+  font-family: "Roboto Flex", serif;
+  font-style: normal;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+
+main {
+  min-height: 80vh;
+}
+
+.purple-brick-bg {
+  background-image: url("/images/purple-brick-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.purple-text {
+  color: #1b0b1d;
+}
+
+/*^ HEADER *********************************/
+
+header {
+  background-color: #37163b;
+  color: #e3dde1;
+}
+
+.nav-text {
+  color: #e3dde1 !important;
+}
+
+
+
+
+.navbar-toggler{
+   background-color: #e3dde1 !important;
+}
+
+.nav-item{
+  text-align: right;
+}
+
+
+.logo {
+  width: 100%;
+  max-width: 200px;
+  margin-right: 10px;
+}
+
+#hero-button{
+  max-width: 80vw;
+}
+/*^ FOOTER *********************************/
+
+footer {
+  background-color: #212121;
+  color: #808080;
+}
+
+.social-media-link {
+  color: #808080;
+  transition: color ease-in-out 0.3s;
+}
+.social-media-link:hover {
+  color: #ffffff;
+}
+
+
+
+/* Scroll to Top Button Styles */
+#scrollToTopBtn {
+    display: none;  /* Hidden by default */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: opacity 0.3s;
+}
+
+
+
+/*^ HERO ***********************************/
+
+#hero-section {
+  background: linear-gradient(to top, #1b0b1d, #37163b);
+  color: #f9f9f9;
+}
+
+.call-to-action {
+  font-size: 24px;
+}
+
+.hero-img {
+  max-height: 600px;
+  border-radius: 50%;
+  margin-top: 0;
+  
+}
+
+
+
+/* Apply top margin on screens less than 768px */
+@media (max-width: 767px) {
+    .hero-img {
+        margin-top: 50px;
+        max-width: 90%;
+    }
+}
+
+#rotating-header {
+  opacity: 0;
+  transition: opacity 1s;
+  text-align: center;
+  font-size: 40px;
+}
+
+/* Left-aligned text on screens wider than 768px */
+@media (min-width: 768px) {
+  #rotating-header {
+    text-align: left;
+    font-size: 70px;
+  }
+}
+
+.hero-col {
+    /* Default styles */
+    text-align: left;
+}
+
+@media (max-width: 767px) {
+    .hero-col {
+        text-align: center;
+    }
+
+    .hero-col > * {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+}
+
+/*^ BOOKING *********************************/
+
+#booking {
+  background: linear-gradient(to top, #efefef, #f9f9f9);
+  color: #212121;
+}
+
+.paypal-link {
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffb800;
+  border: 1px solid #ffb800;
+  border-radius: 5px;
+  padding: 10px 50px;
+  text-decoration: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.paypal-link:hover {
+  background-color: #ff9d00;
+  border-color: #005f8f;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.paypal-logo {
+  max-width: 150px;
+  height: auto;
+}
+
+.paypal-name {
+  width: 100px;
+}
+
+.paypal-link:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 120, 186, 0.5);
+}
+
+/*^ BANNER ***********************************/
+
+#banner {
+  text-align: center;
+}
+#banner p {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+/*^ INSTAGRAM FEED *****************************/
+
+#instagram {
+  background: linear-gradient(to top, #212121, #37163b);
+  color: #f9f9f9;
+}
+.instagram-media {
+  background-color: #fff;
+  border: 0;
+  border-radius: 3px;
+  box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.5), 0 1px 10px 0 rgba(0, 0, 0, 0.15);
+  margin: 1px;
+  min-width: 326px;
+  padding: 0;
+  width: 99.375%;
+  width: -webkit-calc(100% - 2px);
+  width: calc(100% - 2px);
+}
+
+/*^ GALLERY ************************/
+
+#gallery {
+  background: linear-gradient(to top, #37163b, #1b0b1d);
+  color: #f9f9f9;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 10px;
+  padding: 10px; /* Optional: Adds padding around the gallery */
+  box-sizing: border-box; /* Ensures padding is included in the element's total width/height */
+}
+
+.gallery-img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(219, 58, 52, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.gallery-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 12px rgba(219, 58, 52, 0.7);
+}
+
+.lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8); /* Dim background */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  cursor: pointer;
+}
+
+.lightbox-img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 8px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.pulse-button {
+  display: inline-block;
+  background-color: #cc0000;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 22px;
+  cursor: pointer;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+  animation: pulse 2s infinite;
+}
+
+.pulse-button:hover {
+  transform: scale(1.1);
+  background-color: #a30000;
+}
+
+.book-today {
+  max-width: 400px;
+  display: block;
+  width: 100%;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
